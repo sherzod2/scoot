@@ -1,0 +1,125 @@
+
+.hero-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    padding: 22px 0 21px;
+
+    &__logo{
+        display: block;
+        flex-shrink: 0;
+        margin-right: 42px;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &-main{
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        background-color: transparent;
+        border: none;
+        background-image: url("../images/humburger.svg");
+        background-repeat: no-repeat;
+        padding: 0;
+        width: 19px;
+        height: 16px;
+    }
+}
+
+.site-nav{
+    &__list{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__link{
+        padding: 0 16px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        white-space: nowrap;
+
+        &:hover{
+            color: #FCB72B;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 655px){
+    .header{
+        position: relative;
+        padding: 24px 0;
+
+        &__logo{
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            margin-left: -38px;
+            margin-right: 0;
+        }
+
+        &__hamburger{
+            display: inline-block;
+        }
+
+        &--open &__hamburger {
+            background-image: url("../images/humburger-x.svg");
+        }
+
+        &__right{
+            display: none;
+        }
+
+        &--open &__right{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #333A44;
+            width: 256px;
+            height: 90.6vh;
+            top: 100%;
+            left: 0;
+            padding-top: 64px;
+            padding: 64px 32px 24px;
+        }
+
+        &--open .site-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--open .site-nav__list{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &--open .site-nav__item{
+            margin-bottom: 24px;
+        }
+
+        &__button{
+            align-self: center;
+        }
+    }
+
+    .hero-nav{
+        justify-content: flex-start;
+    }
+}
