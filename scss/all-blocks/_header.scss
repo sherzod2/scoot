@@ -11,6 +11,14 @@
         display: block;
         flex-shrink: 0;
         margin-right: 42px;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        &:active{
+            opacity: 0.6;
+        }
     }
 
     &__right{
@@ -56,6 +64,10 @@
 
         &:hover{
             color: #FCB72B;
+        }
+
+        &:active{
+            opacity: 0.6;
         }
     }
 }

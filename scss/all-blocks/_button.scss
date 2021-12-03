@@ -1,5 +1,5 @@
 .button{
-    padding: 14px 39px;
+    padding: 11px 36px;
     font-weight: bold;
     font-size: 15px;
     line-height: 25px;
@@ -7,9 +7,13 @@
     color: #fff;
     background-color: #FCB72B;
     white-space: nowrap;
-    border: none;
+    transition: 0.4s;
+    border: 3px solid transparent;
 
     &:hover{
         color: #FCB72B;
+        background-color: transparent;
+        border: 3px solid #FCB72B;
+        cursor: pointer;
     }
 }
