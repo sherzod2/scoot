@@ -1,0 +1,119 @@
+.instruction{
+    padding: 160px 0 80px;
+
+    &__line{
+        margin-bottom: -60px;
+        margin-left: -210px;
+        max-width: 974px;
+        border-bottom: 15px solid #E5ECF4;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__item + &__item{
+        margin-left: 10px;
+    }
+
+    &__img{
+        margin-bottom: 40px;
+    }
+
+    &__title{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+        color: #495567;
+        margin: 0;
+        margin-bottom: 27px;
+    }
+
+    &__desc{
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin: 0;
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1047px){
+    .instruction__line{
+        margin-left: -290px;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .instruction__line{
+        margin-left: -390px;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .instruction{
+
+        &__line{
+            border-bottom: none;
+        }
+
+        &__list{
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        &__item{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        &__img{
+            margin-bottom: 0;
+            margin-right: 70px;
+        }
+
+        &__title{
+            margin-bottom: 27px;
+        }
+
+        &__desc{
+            max-width: 573px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .instruction{
+        padding: 120px 0 60px;
+        &__item{
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__item + &__item{
+            margin-top: 40px;
+        }
+
+        &__img{
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &__title{
+            font-size: 20px;
+            letter-spacing: -0.9;
+            margin-bottom: 24px;
+        }
+    }
+}

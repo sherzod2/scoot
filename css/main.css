@@ -695,4 +695,132 @@ img {
     margin-bottom: 34px;
   }
 }
+
+.instruction {
+  padding: 160px 0 80px;
+}
+
+.instruction__line {
+  margin-bottom: -60px;
+  margin-left: -210px;
+  max-width: 974px;
+  border-bottom: 15px solid #E5ECF4;
+}
+
+.instruction__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.instruction__item + .instruction__item {
+  margin-left: 10px;
+}
+
+.instruction__img {
+  margin-bottom: 40px;
+}
+
+.instruction__title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.instruction__desc {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
+  max-width: 350px;
+}
+
+@media only screen and (max-width: 1047px) {
+  .instruction__line {
+    margin-left: -290px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .instruction__line {
+    margin-left: -390px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .instruction__line {
+    border-bottom: none;
+  }
+  .instruction__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .instruction__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .instruction__img {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+  .instruction__title {
+    margin-bottom: 27px;
+  }
+  .instruction__desc {
+    max-width: 573px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .instruction {
+    padding: 120px 0 60px;
+  }
+  .instruction__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .instruction__item + .instruction__item {
+    margin-top: 40px;
+  }
+  .instruction__img {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .instruction__title {
+    font-size: 20px;
+    letter-spacing: -0.9;
+    margin-bottom: 24px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
