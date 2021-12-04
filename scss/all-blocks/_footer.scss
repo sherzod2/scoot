@@ -1,0 +1,209 @@
+.footer {
+
+    background-image: url("../../images/footer-top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        margin: 0;
+        max-width: 415px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 102px 0;
+    }
+
+    &__app {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__app-store {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 159px;
+        height: 56px;
+        padding: 8px 16px;
+        background-color: #E5ECF4;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-right: 18px;
+        transition: 0.4s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &-img {
+            margin-right: 12px;
+        }
+
+        &-desc {
+            margin: 0;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+        }
+
+        &-title {
+            margin: 0;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+        }
+    }
+
+    &__app-googleplay {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 182px;
+        height: 56px;
+        padding: 8px 16px;
+        background-color: #E5ECF4;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: 0.4s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &-img {
+            margin-right: 12px;
+        }
+
+        &-desc {
+            margin: 0;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: -0.446429px;
+            color: #495567;
+        }
+
+        &-title {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.892857px;
+            color: #495567;
+            margin: 0;
+        }
+    }
+
+    &__bottom {
+        background-color: #333A44;
+        padding: 35px 0 32px;
+
+        &-body {
+            display: flex;
+            align-items: center;
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            &-link {
+                vertical-align: middle;
+                color: #FCB72B;
+
+                &:hover {
+                    color: #8b99a8;
+                    background-color: #333A44;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-item {
+                padding: 0 12px;
+            }
+        }
+    }
+
+    &__logo {
+        margin-right: 59px;
+        flex-shrink: 0;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .footer {
+
+        &__top {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .footer {
+        &__bottom {
+            &-body {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            &-right {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            &-sec {
+                margin-bottom: 85px;
+                flex-direction: column;
+
+                &-item{
+                    padding: 8px 0;
+                }
+            }
+        }
+
+        &__logo {
+            margin-right: 0;
+            margin-bottom: 41px;
+        }
+    }
+}
+
+@media only screen and (max-width: 494px){
+    .footer__title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.42857px;
+    }
+}

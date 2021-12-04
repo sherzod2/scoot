@@ -1,0 +1,111 @@
+.services{
+    padding: 100px 0;
+    &__list{
+        list-style: none;
+
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item + &__item{
+        margin-top: 155px;
+    }
+
+    &__item:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    &__item:nth-child(odd)::before{
+        content: '';
+        display: block;
+        max-width: 734px;
+        max-height: 134px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url("../images/ser-path-odd.png");
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    &__item:nth-child(even)::before{
+        content: '';
+        display: block;
+        max-width: 734px;
+        max-height: 134px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../images/ser-path-even.png");
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    &__img{
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    &__text{
+        max-width: 445px;
+    }
+
+    &__title{
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.15px;
+        color: #495567;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    &__desc{
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .services{
+        &__item:nth-child(odd){
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__item{
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 128px;
+        }
+
+        &__img{
+            margin-bottom: 56px;
+        }
+        &__title{
+            margin-bottom: 40px;
+        }
+    }
+}
+@media only screen and (max-width: 520px){
+    .services{
+        &__img{
+            margin-bottom: 56px;
+        }
+        &__title{
+            margin-bottom: 32px;
+        }
+
+        &__desc{
+            margin-top: 32px;
+        }
+    }
+}
